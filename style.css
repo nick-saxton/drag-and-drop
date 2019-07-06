@@ -1,0 +1,56 @@
+*,
+html,
+body {
+  box-sizing: border-box;
+  font-family: Arial, sans-serif;
+  margin: 0;
+  padding: 0;
+}
+
+html,
+body {
+  height: 100%;
+  width: 100%;
+}
+
+.container {
+  height: 100%;
+  padding: 25px;
+  position: relative;
+}
+
+.selection {
+  align-items: center;
+  background-color: dodgerblue;
+  border: 1px solid black;
+  border-radius: 5px;
+  color: white;
+  display: inline-flex;
+  height: 30px;
+  padding: 10px 5px;
+  position: absolute;
+  width: auto;
+}
+
+.selection.dragging {
+  cursor: move;
+  opacity: 0.4;
+}
+
+.selection-text:hover {
+  cursor: default;
+}
+
+.selection-text,
+.selection-remove {
+  padding: 5px;
+}
+
+.selection-remove {
+  color: black;
+}
+
+.selection-remove:hover {
+  color: grey;
+  cursor: pointer;
+}
